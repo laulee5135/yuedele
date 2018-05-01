@@ -1,0 +1,20 @@
+server:
+  port: 8443
+
+  servlet:
+    path: /yuedele
+    
+#  ssl:
+#    key-store: classpath:cert/214581596430706.pfx
+#    key-store-password: 214581596430706
+#    key-store-type: PKCS12
+
+spring:
+  datasource:
+    url: jdbc:mysql://47.104.202.73:3306/yuedele?useUnicode=true&characterEncoding=UTF-8&characterSetResults=utf8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver  
+mybatis:
+  mapper-locations: classpath*:sql/*Mapper.xml   
+    
